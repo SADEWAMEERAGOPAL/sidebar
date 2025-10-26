@@ -1,0 +1,67 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+ul li{
+ list-style: none; 
+
+}
+
+a{
+  text-decoration: none;
+   color: #fff;
+   display: inline-block;
+   margin: 10px;
+}
+
+i{
+   position: fixed;
+   left:0;
+   font-size: 25px;
+   margin: 10px;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    left:-200px;  
+    transition: all .08 ease-in-out;
+}
+
+.iconplus{
+   font-size: 40px;
+    position: absolute;
+    right: 10px;
+    top:5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+
+  .iconplus:hover{
+    transform: rotate(90deg);
+
+  }
+
+.sidebar.active{
+    left:0;
+   
+}
+
+.section{
+    height: 100vh;
+    padding: 100px 15px;
+    width: 100%;
+    border: 10px solid gainsboro;
+    background-color: aliceblue;
+    cursor: pointer;
+
+}
+
+.section:hover{
+  background-color: grey;
+}
